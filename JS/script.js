@@ -1,3 +1,15 @@
+let navBar = document.querySelector("#header")
+
+document.addEventListener("scroll", () => {
+    let scrollTop = window.scrollY;
+    if (scrollTop > 0) {
+        navBar.classList.add("rolar")
+    } else {
+        navBar.classList.remove("rolar")
+    }
+})
+
+
 var swiper = new Swiper(".swiper", {
 
     loop: true,
@@ -30,17 +42,4 @@ var swiper = new Swiper(".swiper", {
 
 });
 
-
-// document.addEventListener("DOMContentLoaded", function () {
-//     const menuContainer = document.getElementById("btn-nav")
-//     const submenu = document.getElementById("drop")
-
-//     menuContainer.addEventListener("mouseenter", function () {
-//         submenu.style.display = "flex";
-//     })
-
-//     menuContainer.addEventListener("mouseleave", function () {
-//         submenu.style.display = "none"
-//     })
-// })
 
