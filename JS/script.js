@@ -29,3 +29,18 @@ var swiper = new Swiper(".swiper", {
     }
 
 });
+
+
+// document.addEventListener("DOMContentLoaded", function () {
+//     const menuContainer = document.getElementById("btn-nav")
+//     const submenu = document.getElementById("drop")
+
+//     menuContainer.addEventListener("mouseenter", function () {
+//         submenu.style.display = "flex";
+//     })
+
+//     menuContainer.addEventListener("mouseleave", function () {
+//         submenu.style.display = "none"
+//     })
+// })
+
