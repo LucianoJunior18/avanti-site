@@ -5,7 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avanti</title>
+    <!-- links css -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/carrosel.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/avant-text.css">
+    <link rel="stylesheet" href="css/cadastro-form.css">
+
+
     <!-- bootstrap-icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <!-- swiper carrosel -->
@@ -36,15 +45,20 @@
                 </div>
                 <div class="user-cart">
                     <i class="bi bi-person"></i>
-                    <p class="user">Ola,<br>Nome cliente</p>
-                    <p class="cart"><i class="bi bi-cart"></i><span class="cart-count">2</span></p>
+                    <p class="user">Olá,<br>Nome cliente!</p>
+
+                    <div class="cart-icon-wrapper">
+                        <i class="bi bi-cart"></i>
+                        <span class="cart-count">2</span>
+                    </div>
                 </div>
+
             </div>
             <nav class="nav">
                 <div class="btn-nav" id="btn-nav">
                     <button class="nav-btn"><i class="bi bi-list"></i></button>
 
-                    <li class="drop-hover">
+                    <li class="drop-hover activer">
                         <a href="#">Todas Categorias</a>
 
                         <div class="drop">
@@ -96,6 +110,7 @@
                                 </div>
 
                                 <a href="#">Departamentos <i class="bi bi-arrow-right"></i></a>
+
                                 <a href="#">Departamentos <i class="bi bi-arrow-right"></i></a>
                                 <a href="#">Departamentos <i class="bi bi-arrow-right"></i></a>
                                 <a href="#">Departamentos <i class="bi bi-arrow-right"></i></a>
@@ -113,14 +128,66 @@
 
                 </div>
                 <ul class="nav-links">
-                    <li>Departamentos</li>
-                    <li>Departamentos</li>
-                    <li>Departamentos</li>
-                    <li>Departamentos</li>
-                    <li>Departamentos</li>
-                    <li>Departamentos</li>
-                    <li>Departamentos</li>
-                    <li>Departamentos</li>
+                    <li class="drop-hover"><a href="#">Departamentos</a>
+                        <div class="drop drop-2">
+                            <div class="sub-dropdown sub-dropdown-2">
+                                <div class="sub-dropdown-content sub-dropdown-left">
+                                    <h3>Departamentos</h3>
+                                    <div class="mega-column mega-column-2 ">
+                                        <div class="mega-column-txt">
+                                            <h3>Categoria</h3>
+                                            <a href="#">Categoria</a>
+                                            <a href="#">Categoria</a>
+                                            <a href="#">Categoria</a>
+                                            <a href="#">Categoria</a>
+                                            <a href="#">Categoria</a>
+                                            <a href="#">Categoria</a>
+                                            <a href="#">Categoria</a>
+                                        </div>
+
+                                        <div class="mega-column-txt">
+                                            <h3>Categoria</h3>
+                                            <a href="#">Categoria</a>
+                                            <a href="#">Categoria</a>
+                                            <a href="#">Categoria</a>
+                                            <a href="#">Categoria</a>
+                                            <a href="#">Categoria</a>
+                                            <a href="#">Categoria</a>
+                                            <a href="#">Categoria</a>
+                                        </div>
+
+                                        <div class="mega-column-txt">
+                                            <h3>Categoria</h3>
+                                            <a href="#">Categoria</a>
+                                            <a href="#">Categoria</a>
+                                            <a href="#">Categoria</a>
+                                            <a href="#">Categoria</a>
+                                            <a href="#">Categoria</a>
+                                            <a href="#">Categoria</a>
+                                            <a href="#">Categoria</a>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="mega-column-img mega-column-img-2">
+                                        <img src="img/chicara-nav.png" alt="">
+                                        <div class="content">
+                                            <p>Confira os Produtos<br>Que <br>acabaram<br>De chegar</p>
+                                            <button class="mega-column-btn">VER TODOS</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                    <li><a href="#">Departamentos</a></li>
+                    <li><a href="#">Departamentos</a></li>
+                    <li><a href="#">Departamentos</a></li>
+                    <li><a href="#">Departamentos</a></li>
+                    <li><a href="#">Departamentos</a></li>
+                    <li><a href="#">Departamentos</a></li>
+                    <li><a href="#">Departamentos</a></li>
+                    </li>
+
+
                 </ul>
             </nav>
 
@@ -153,55 +220,55 @@
                         <div class="container-carr">
                             <p class="novo">NOVO</p>
                             <img src="img/7d52d6af45bdbc2b2d315fe332eb521b.png" alt="">
-                            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                            <h3>Camiseta Avanti branca Masculina Casual </h3>
                             <s class="desconto">R$ 100,00</s>
                             <p class="valor">R$79,90</p>
                             <P class="vezes">Ou em ate <span>10x de R$7,90</span></P>
-                            <button>Comprar</button>
+                            <button class="btn-comprar">Comprar</button>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="container-carr">
                             <p class="novo">NOVO</p>
                             <img src="img/7d52d6af45bdbc2b2d315fe332eb521b.png" alt="">
-                            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                            <h3>Camiseta Avanti branca Masculina Casual</h3>
                             <s class="desconto">R$ 100,00</s>
                             <p class="valor">R$79,90</p>
                             <P class="vezes">Ou em ate <span>10x de R$7,90</span></P>
-                            <button>Comprar</button>
+                            <button class="btn-comprar">Comprar</button>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="container-carr">
                             <p class="novo">NOVO</p>
                             <img src="img/7d52d6af45bdbc2b2d315fe332eb521b.png" alt="">
-                            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                            <h3>Camiseta Avanti branca Masculina Casual</h3>
                             <s class="desconto">R$ 100,00</s>
                             <p class="valor">R$79,90</p>
                             <P class="vezes">Ou em ate <span>10x de R$7,90</span></P>
-                            <button>Comprar</button>
+                            <button class="btn-comprar">Comprar</button>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="container-carr">
                             <p class="novo">NOVO</p>
                             <img src="img/7d52d6af45bdbc2b2d315fe332eb521b.png" alt="">
-                            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                            <h3>Camiseta Avanti branca Masculina Casual</h3>
                             <s class="desconto">R$ 100,00</s>
                             <p class="valor">R$79,90</p>
                             <P class="vezes">Ou em ate <span>10x de R$7,90</span></P>
-                            <button>Comprar</button>
+                            <button class="btn-comprar">Comprar</button>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="container-carr">
                             <p class="novo">NOVO</p>
                             <img src="img/7d52d6af45bdbc2b2d315fe332eb521b.png" alt="">
-                            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                            <h3>Camiseta Avanti branca Masculina Casual</h3>
                             <s class="desconto">R$ 100,00</s>
                             <p class="valor">R$79,00</p>
                             <P class="vezes">Ou em ate <span>10x de R$7,90</span></P>
-                            <button>Comprar</button>
+                            <button class="btn-comprar">Comprar</button>
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -209,27 +276,43 @@
                             <p class="novo">NOVO</p>
                             <img src="img/7d52d6af45bdbc2b2d315fe332eb521b.png" alt="">
                             <div class="container-text">
-                                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                                <h3>Camiseta Avanti branca Masculina Casual</h3>
                                 <s class="desconto">R$ 100,00</s>
                                 <p class="valor">R$79,00</p>
                                 <P>Ou em ate <span>10x de R$7,90</span></P>
                             </div>
 
-                            <button>Comprar</button>
+                            <button class="btn-comprar">Comprar</button>
                         </div>
                     </div>
-                    <div class="swiper-slide">Slide 7</div>
-                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">
+                        <div class="container-carr">
+                            <p class="novo">NOVO</p>
+                            <img src="img/7d52d6af45bdbc2b2d315fe332eb521b.png" alt="">
+                            <div class="container-text">
+                                <h3>Camiseta Avanti branca Masculina Casual</h3>
+                                <s class="desconto">R$ 100,00</s>
+                                <p class="valor">R$79,00</p>
+                                <P>Ou em ate <span>10x de R$7,90</span></P>
+                            </div>
+
+                            <button class="btn-comprar">Comprar</button>
+                        </div>
+                    </div>
+
 
 
                 </div>
                 <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
 
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
 
+                <div class="swiper-button-prev custom-swiper-btn">
+                    <i class="bi bi-arrow-left-short"></i>
+                </div>
+                <div class="swiper-button-next custom-swiper-btn">
+                    <i class="bi bi-arrow-right-short"></i>
+                </div>
 
             </div>
         </div>
@@ -243,21 +326,38 @@
 
             <div class="avanti-txt">
                 <h1>AVANTI</h1>
-                <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut
-                    eleifend viverra.
-                    Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel
-                    pulvinar ligula
-                    hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci,
-                    auctor fringilla magna
-                    consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.
+                <p>Com mais de 20 anos de experiência em comércio digital, a Avanti é formada por uma equipe de
+                    especialistas dedicada a
+                    transformar visões em realidades digitais. Atuamos ao lado dos maiores players do Brasil,
+                    contribuindo ativamente para
+                    que alcancem seus objetivos em um mercado cada vez mais dinâmico e competitivo.
+
+                    Para acelerar o comércio digital, reunimos os melhores talentos, cultivamos ideias inovadoras e
+                    contamos com pessoas que
+                    respiram tecnologia e lideram o futuro. Nosso compromisso com tecnologia de ponta, entrega de alta
+                    qualidade e uma
+                    dedicação inabalável é o que nos diferencia — e também o que impulsiona o sucesso dos nossos
+                    clientes.
                 </p>
-                <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut
-                    eleifend viverra.
-                    Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel
-                    pulvinar ligula
-                    hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci,
-                    auctor fringilla magna
-                    consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.
+                <p>
+                    A Avanti é uma empresa guiada pela inovação, qualidade e excelência em tudo o que faz. Oferecemos
+                    soluções inteligentes
+                    e eficazes, com a capacidade de compreender profundamente as necessidades do mercado e convertê-las
+                    em produtos e
+                    serviços de alto valor agregado.
+
+                    Cada projeto é desenvolvido com responsabilidade, estratégia e
+                    foco em crescimento
+                    sustentável.
+
+                    Nosso propósito é ir além das expectativas. Fazemos isso por meio da tecnologia, da criatividade e
+                    de uma cultura
+                    organizacional ética, colaborativa e voltada para o futuro.
+
+                    Avanti significa seguir em frente — e é isso que fazemos todos os dias: avançamos com propósito,
+                    foco e paixão.
+                </p>
+
 
             </div>
         </div>
@@ -268,21 +368,36 @@
     <div class="container">
         <div class="content">
             <div class="text-section">
-                <h2>LOREM IPSUM</h2>
+                <h2>Localizaçoes</h2>
                 <div class="text-item">
                     <div class="icon"><i class="bi bi-geo-alt"></i></div>
-                    <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-                        mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
+                    <div class="txt-content">
+                        <h3>Florianópolis - SC</h3>
+                        <p>
+                            Rodovia SC 401, 500
+                            Ed. Techno Tower - Torre 2, 2º andar
+                            João Paulo - CEP 88030-000 </p>
+                    </div>
                 </div>
                 <div class="text-item">
                     <div class="icon"><i class="bi bi-geo-alt"></i></div>
-                    <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-                        mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
+                    <div class="txt-content">
+                        <h3>São Paulo - BA</h3>
+                        <p>
+                            Av. Brigadeiro Faria Lima, 4440
+                            10º andar
+                            Itaim Bibi – CEP 04538-132</p>
+                    </div>
                 </div>
                 <div class="text-item">
                     <div class="icon"><i class="bi bi-geo-alt"></i></div>
-                    <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-                        mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
+                    <div class="txt-content">
+                        <h3>Florianópolis - SC</h3>
+                        <p>
+                            Rodovia Jose Carlos Daux, 500
+                            Ed. Techno Towers - Torre 2, Sala 209
+                            João Paulo - CEP 88030-000 </p>
+                    </div>
                 </div>
             </div>
             <div class="image-section">
@@ -299,21 +414,38 @@
 
             <div class="avanti-txt">
                 <h1>AVANTI</h1>
-                <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut
-                    eleifend viverra.
-                    Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel
-                    pulvinar ligula
-                    hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci,
-                    auctor fringilla magna
-                    consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.
+                <p>Com mais de 20 anos de experiência em comércio digital, a Avanti é formada por uma equipe de
+                    especialistas dedicada a
+                    transformar visões em realidades digitais. Atuamos ao lado dos maiores players do Brasil,
+                    contribuindo ativamente para
+                    que alcancem seus objetivos em um mercado cada vez mais dinâmico e competitivo.
+
+                    Para acelerar o comércio digital, reunimos os melhores talentos, cultivamos ideias inovadoras e
+                    contamos com pessoas que
+                    respiram tecnologia e lideram o futuro. Nosso compromisso com tecnologia de ponta, entrega de alta
+                    qualidade e uma
+                    dedicação inabalável é o que nos diferencia — e também o que impulsiona o sucesso dos nossos
+                    clientes.
                 </p>
-                <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut
-                    eleifend viverra.
-                    Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel
-                    pulvinar ligula
-                    hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci,
-                    auctor fringilla magna
-                    consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.
+                <p>
+                    A Avanti é uma empresa guiada pela inovação, qualidade e excelência em tudo o que faz. Oferecemos
+                    soluções inteligentes
+                    e eficazes, com a capacidade de compreender profundamente as necessidades do mercado e convertê-las
+                    em produtos e
+                    serviços de alto valor agregado.
+
+                    Cada projeto é desenvolvido com responsabilidade, estratégia e
+                    foco em crescimento
+                    sustentável.
+
+                    Nosso propósito é ir além das expectativas. Fazemos isso por meio da tecnologia, da criatividade e
+                    de uma cultura
+                    organizacional ética, colaborativa e voltada para o futuro.
+
+                    Avanti significa seguir em frente — e é isso que fazemos todos os dias: avançamos com propósito,
+                    foco e paixão.
+                </p>
+
 
             </div>
         </div>
@@ -336,50 +468,55 @@
                         <div class="container-carr">
                             <p class="novo">NOVO</p>
                             <img src="img/7d52d6af45bdbc2b2d315fe332eb521b.png" alt="">
-                            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                            <h3>Camiseta Avanti branca Masculina Casual </h3>
+                            <s class="desconto">R$ 100,00</s>
                             <p class="valor">R$79,90</p>
                             <P class="vezes">Ou em ate <span>10x de R$7,90</span></P>
-                            <button>Comprar</button>
+                            <button class="btn-comprar">Comprar</button>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="container-carr">
                             <p class="novo">NOVO</p>
                             <img src="img/7d52d6af45bdbc2b2d315fe332eb521b.png" alt="">
-                            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                            <h3>Camiseta Avanti branca Masculina Casual</h3>
+                            <s class="desconto">R$ 100,00</s>
                             <p class="valor">R$79,90</p>
                             <P class="vezes">Ou em ate <span>10x de R$7,90</span></P>
-                            <button>Comprar</button>
+                            <button class="btn-comprar">Comprar</button>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="container-carr">
                             <p class="novo">NOVO</p>
                             <img src="img/7d52d6af45bdbc2b2d315fe332eb521b.png" alt="">
-                            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                            <h3>Camiseta Avanti branca Masculina Casual</h3>
+                            <s class="desconto">R$ 100,00</s>
                             <p class="valor">R$79,90</p>
                             <P class="vezes">Ou em ate <span>10x de R$7,90</span></P>
-                            <button>Comprar</button>
+                            <button class="btn-comprar">Comprar</button>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="container-carr">
                             <p class="novo">NOVO</p>
                             <img src="img/7d52d6af45bdbc2b2d315fe332eb521b.png" alt="">
-                            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                            <h3>Camiseta Avanti branca Masculina Casual</h3>
+                            <s class="desconto">R$ 100,00</s>
                             <p class="valor">R$79,90</p>
-                            <P>Ou em ate <span>10x de R$7,90</span></P>
-                            <button>Comprar</button>
+                            <P class="vezes">Ou em ate <span>10x de R$7,90</span></P>
+                            <button class="btn-comprar">Comprar</button>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="container-carr">
                             <p class="novo">NOVO</p>
                             <img src="img/7d52d6af45bdbc2b2d315fe332eb521b.png" alt="">
-                            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                            <h3>Camiseta Avanti branca Masculina Casual</h3>
+                            <s class="desconto">R$ 100,00</s>
                             <p class="valor">R$79,00</p>
-                            <P>Ou em ate <span>10x de R$7,90</span></P>
-                            <button>Comprar</button>
+                            <P class="vezes">Ou em ate <span>10x de R$7,90</span></P>
+                            <button class="btn-comprar">Comprar</button>
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -387,26 +524,43 @@
                             <p class="novo">NOVO</p>
                             <img src="img/7d52d6af45bdbc2b2d315fe332eb521b.png" alt="">
                             <div class="container-text">
-                                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                                <h3>Camiseta Avanti branca Masculina Casual</h3>
+                                <s class="desconto">R$ 100,00</s>
                                 <p class="valor">R$79,00</p>
                                 <P>Ou em ate <span>10x de R$7,90</span></P>
                             </div>
 
-                            <button>Comprar</button>
+                            <button class="btn-comprar">Comprar</button>
                         </div>
                     </div>
-                    <div class="swiper-slide">Slide 7</div>
-                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">
+                        <div class="container-carr">
+                            <p class="novo">NOVO</p>
+                            <img src="img/7d52d6af45bdbc2b2d315fe332eb521b.png" alt="">
+                            <div class="container-text">
+                                <h3>Camiseta Avanti branca Masculina Casual</h3>
+                                <s class="desconto">R$ 100,00</s>
+                                <p class="valor">R$79,00</p>
+                                <P>Ou em ate <span>10x de R$7,90</span></P>
+                            </div>
+
+                            <button class="btn-comprar">Comprar</button>
+                        </div>
+                    </div>
+
 
 
                 </div>
                 <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
 
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
 
+                <div class="swiper-button-prev custom-swiper-btn">
+                    <i class="bi bi-arrow-left-short"></i>
+                </div>
+                <div class="swiper-button-next custom-swiper-btn">
+                    <i class="bi bi-arrow-right-short"></i>
+                </div>
 
             </div>
         </div>

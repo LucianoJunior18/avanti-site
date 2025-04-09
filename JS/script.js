@@ -26,7 +26,7 @@ var swiper = new Swiper(".swiper", {
         // when window width is >= 320px
         640: {
             slidesPerView: 1,
-            spaceBetween: 18
+            spaceBetween: 1
         },
         // when window width is >= 480px
         768: {
@@ -36,10 +36,75 @@ var swiper = new Swiper(".swiper", {
         // when window width is >= 640px
         1188: {
             slidesPerView: 5,
-            spaceBetween: 25
+            spaceBetween: 1
         }
     }
 
 });
+
+// Primeiro dropdown
+const dropHover1 = document.querySelector('.drop-hover:not(:has(.drop-2))'); // seleciona o primeiro
+const drop1 = dropHover1?.querySelector('.drop');
+
+// Segundo dropdown
+const dropHover2 = document.querySelector('.drop-hover .drop-2')?.closest('.drop-hover');
+const drop2 = dropHover2?.querySelector('.drop-2');
+
+let timer1, timer2;
+
+if (dropHover1 && drop1) {
+    dropHover1.addEventListener('mouseenter', () => {
+        clearTimeout(timer1);
+        drop1.style.opacity = '1';
+        drop1.style.visibility = 'visible';
+        drop1.style.transform = 'translateY(0)';
+        dropHover1.classList.add('active'); //
+    });
+
+    dropHover1.addEventListener('mouseleave', () => {
+        timer1 = setTimeout(() => {
+            drop1.style.opacity = '0';
+            drop1.style.visibility = 'hidden';
+            drop1.style.transform = 'translateY(10px)';
+            dropHover1.classList.remove('active');
+        }, 200);
+    });
+}
+
+if (dropHover2 && drop2) {
+    dropHover2.addEventListener('mouseenter', () => {
+        clearTimeout(timer2);
+        drop2.style.opacity = '1';
+        drop2.style.visibility = 'visible';
+        drop2.style.transform = 'translateY(0)';
+        dropHover2.classList.add('active'); // 
+    });
+
+    dropHover2.addEventListener('mouseleave', () => {
+        timer2 = setTimeout(() => {
+            drop2.style.opacity = '0';
+            drop2.style.visibility = 'hidden';
+            drop2.style.transform = 'translateY(10px)';
+            dropHover2.classList.remove('active');
+        }, 200);
+    });
+}
+
+
+
+let cartCount = 2;
+const botoesComprar = document.querySelectorAll('.btn-comprar');
+const badgeCarrinho = document.querySelector('.cart-count');
+
+botoesComprar.forEach(botao => {
+    botao.addEventListener('click', () => {
+        cartCount++;
+        badgeCarrinho.textContent = cartCount;
+    });
+});
+
+
+
+
 
 
