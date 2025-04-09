@@ -30,7 +30,7 @@ var swiper = new Swiper(".swiper", {
         },
         // when window width is >= 480px
         768: {
-            slidesPerView: 2,
+            slidesPerView: 4,
             spaceBetween: 18
         },
         // when window width is >= 640px

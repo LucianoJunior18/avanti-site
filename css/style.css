@@ -390,8 +390,8 @@ header.rolar {
 .main-content {
   display: flex;
   align-items: center;
-  width: 685px;
-  height: 610px;
+  width: 40rem;
+  height: 38rem;
 
   position: relative;
 }
@@ -411,7 +411,7 @@ header.rolar {
 }
 
 .main-text h1 {
-  font-size: 100px;
+  font-size: 6rem;
   font-weight: 100;
 }
 .main-text h1 span {
@@ -634,6 +634,7 @@ header.rolar {
 .container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap; /* permite quebrar linha em telas menores */
   background-color: #dedede;
   color: #4f4f4f;
   height: 85vh;
@@ -672,9 +673,18 @@ header.rolar {
   margin-right: 15px;
 }
 
+.image-section {
+  flex: 1 1 300px; /* torna a imagem flexível */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
 .image-section img {
   max-width: 642px;
   height: 720px;
+  object-fit: contain;
 }
 /* FIM AVANTI LOCALIZAÇÃO */
 
@@ -723,7 +733,7 @@ header.rolar {
   background-color: #dedede;
   border-radius: 8px;
   margin: 0 auto;
-  width: 1260px;
+  width: 80vw;
   height: 176px;
   display: flex;
   justify-content: center;
