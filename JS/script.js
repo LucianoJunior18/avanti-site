@@ -23,15 +23,19 @@ var swiper = new Swiper(".swiper", {
         clickable: true
     },
     breakpoints: {
-        // when window width is >= 320px
-        640: {
-            slidesPerView: 1,
+        300: {
+            slidesPerView: 2,
+            spaceBetween: 1
+        },
+
+        700: {
+            slidesPerView: 3,
             spaceBetween: 1
         },
         // when window width is >= 480px
-        768: {
+        915: {
             slidesPerView: 4,
-            spaceBetween: 18
+            spaceBetween: 0
         },
         // when window width is >= 640px
         1188: {
@@ -102,6 +106,15 @@ botoesComprar.forEach(botao => {
         badgeCarrinho.textContent = cartCount;
     });
 });
+
+// MENU ACORDION
+document.querySelectorAll('.accordion-div').forEach(header => {
+    header.addEventListener('click', () => {
+        const item = header.parentElement;
+        item.classList.toggle('active');
+    });
+});
+
 
 
 
