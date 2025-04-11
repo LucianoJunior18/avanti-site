@@ -74,7 +74,6 @@ header.rolar {
 
 .search-bar {
   display: flex;
-  align-items: center;
   right: 50px;
   position: relative;
 }
@@ -91,6 +90,10 @@ header.rolar {
 .search-bar input::placeholder {
   color: #000;
   font-weight: bold;
+}
+
+.search-bar button {
+  border: none;
 }
 
 .search-bar button i {
@@ -526,12 +529,12 @@ header.rolar {
 }
 
 .tag-desconto {
-  margin-left: 10px;
+  margin-left: 5px;
   background-color: #5ec0be;
   color: #ffffff;
   font-size: 11px;
   font-weight: 700;
-  padding: 4px 8px;
+  padding: 3px 5px;
   border-radius: 4px;
   text-decoration: underline;
 }
