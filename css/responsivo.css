@@ -483,6 +483,11 @@
     color: #005cff;
   }
 
+  /* carrosel */
+  .carrosel-off {
+    display: none !important;
+  }
+
   /* INICIO AVANTI TXT */
   .avanti-section {
     height: 100%;
