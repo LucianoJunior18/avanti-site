@@ -115,6 +115,24 @@ document.querySelectorAll('.accordion-div').forEach(header => {
     });
 });
 
+// Menu Mobile
+let btnMenu = document.getElementById("btn-menu")
+let menuMbl = document.getElementById("menu-mobile-div")
+let overlay = document.getElementById("overlay-menu")
+
+btnMenu.addEventListener('click', () => {
+    menuMbl.classList.add("abrir-menu")
+})
+
+menuMbl.addEventListener('click', () => {
+    menuMbl.classList.remove("abrir-menu")
+})
+
+overlay.addEventListener('click', () => {
+    menuMbl.classList.remove("abrir-menu")
+})
+
+
 
 
 
