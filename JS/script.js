@@ -19,7 +19,7 @@ var swiper = new Swiper(".swiper", {
     },
     pagination: {
         el: ".swiper-pagination",
-        dynamicBullets: true,
+        dynamicBullets: false,
         clickable: true
     },
     breakpoints: {
