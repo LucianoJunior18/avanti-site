@@ -651,6 +651,7 @@ header.rolar {
 }
 
 .swiper {
+  position: relative; /* importante para posicionar os dots corretamente */
   width: 100%;
   height: 478px;
 }
@@ -699,6 +700,14 @@ header.rolar {
   width: 41px;
   border-radius: 5px;
   height: 20px;
+}
+
+.swiper-pagination {
+  position: absolute;
+  margin-bottom: 20px; /* diminui a distância da base do carrossel */
+  left: 0;
+  width: 100%;
+  text-align: center;
 }
 
 .preco-box {
