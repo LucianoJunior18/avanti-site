@@ -266,12 +266,6 @@
 
   .avanti-img {
     width: 40vw;
-    height: 60vh;
-  }
-
-  .avanti-img img {
-    width: 40vw;
-    height: 60vh;
   }
 
   /* FIM AVANTI-TXT */
@@ -448,7 +442,7 @@
   }
 
   .avanti-img img {
-    width: 70%;
+    width: 80%;
     height: 400px;
   }
 

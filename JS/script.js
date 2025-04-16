@@ -133,6 +133,7 @@ overlay.addEventListener('click', () => {
 })
 
 // botao de buscar 
+
 const searchBtn = document.getElementById("search-button");
 const inputField = document.getElementById("search-input");
 const alertBox = document.getElementById("custom-alert");
