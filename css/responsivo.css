@@ -641,6 +641,36 @@
 }
 
 @media screen and (max-width: 560px) {
+  .top-cupom {
+    font-size: 14px;
+  }
+
+  /* header */
+  .custom-alert-content {
+    width: 90%; /* Ocupa 90% da largura da tela */
+    padding: 15px;
+  }
+
+  .custom-alert-content .inputs {
+    width: 90%;
+  }
+
+  .custom-alert-content p {
+    font-size: 14px; /* Ajusta o tamanho da fonte */
+  }
+
+  header {
+    height: 180px;
+  }
+
+  .search-bar input {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-60%, -50%);
+    width: 90vw;
+  }
+
   /* INICIO MAIN  */
 
   .main-sale {
@@ -678,24 +708,6 @@
   }
 
   /* FIM MAIN */
-
-  .top-cupom {
-    font-size: 14px;
-  }
-
-  /* header */
-
-  header {
-    height: 180px;
-  }
-
-  .search-bar input {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-60%, -50%);
-    width: 90vw;
-  }
 
   /* INICIO CARROSEL */
 

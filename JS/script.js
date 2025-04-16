@@ -134,20 +134,42 @@ overlay.addEventListener('click', () => {
 
 // botao de buscar 
 
-document.getElementById("search-button").addEventListener("click", function () {
-    const input = document.getElementById("search-input").value.trim();
-    const alertBox = document.getElementById("custom-alert");
-    const alertMessage = document.getElementById("alert-message");
+const searchBtn = document.getElementById("search-button");
+const inputField = document.getElementById("search-input");
+const alertBox = document.getElementById("custom-alert");
+const alertMessage = document.getElementById("alert-message");
+const closeBtn = document.getElementById("close-alert");
 
+// Função comum para mostrar o popup
+function showAlert() {
+    const input = inputField.value.trim();
     if (input) {
         alertMessage.innerHTML = `Você buscou por <strong>${input}</strong>, esse item não está disponível!`;
-        alertBox.style.display = "flex"; // mostra o popup
+        alertBox.classList.add("show");
+
+        document.body.classList.add("no-scroll");
+
+        inputField.value = ""
+    }
+}
+
+// Evento de clique no botão
+searchBtn.addEventListener("click", showAlert);
+
+// Evento de pressionar Enter
+inputField.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+        showAlert();
     }
 });
 
-document.getElementById("close-alert").addEventListener("click", function () {
-    document.getElementById("custom-alert").style.display = "none";
+// Evento de fechar o popup
+closeBtn.addEventListener("click", function () {
+    alertBox.classList.remove("show");
 });
+
+
+
 
 
 

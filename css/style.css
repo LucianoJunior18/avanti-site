@@ -65,7 +65,7 @@ header {
 }
 
 .custom-alert {
-  display: none;
+  display: flex;
   position: fixed;
   top: 0;
   left: 0;
@@ -75,7 +75,22 @@ header {
   z-index: 9999;
   justify-content: center;
   align-items: center;
-  transition: 0.5s;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition: 0.01s ease;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.custom-alert.show {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
 }
 
 .custom-alert-content {
@@ -87,6 +102,12 @@ header {
   text-align: center;
   position: relative;
   font-size: 16px;
+  transform: scale(0.8);
+  transition: 0.3s;
+}
+
+.custom-alert.show .custom-alert-content {
+  transform: scale(1);
 }
 
 .custom-alert-content .form-buscar {
