@@ -408,7 +408,7 @@
 
   .search-bar {
     top: 50px;
-    left: 25px;
+    left: 0px;
   }
 
   .nav,
@@ -604,6 +604,11 @@
 
   header {
     height: 180px;
+  }
+
+  .search-bar {
+    top: 50px;
+    left: 30px;
   }
 
   .search-bar input {
