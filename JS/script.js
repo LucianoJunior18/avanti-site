@@ -132,6 +132,26 @@ overlay.addEventListener('click', () => {
     menuMbl.classList.remove("abrir-menu")
 })
 
+// botao de buscar 
+
+document.getElementById("search-button").addEventListener("click", function () {
+    const input = document.getElementById("search-input").value.trim();
+    const alertBox = document.getElementById("custom-alert");
+    const alertMessage = document.getElementById("alert-message");
+
+    if (input) {
+        alertMessage.innerHTML = `Você buscou por <strong>${input}</strong>, esse item não está disponível!`;
+        alertBox.style.display = "flex"; // mostra o popup
+    }
+});
+
+document.getElementById("close-alert").addEventListener("click", function () {
+    document.getElementById("custom-alert").style.display = "none";
+});
+
+
+
+
 
 
 

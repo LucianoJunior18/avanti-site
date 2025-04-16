@@ -44,9 +44,29 @@
                 </div>
 
                 <div class="search-bar">
-                    <input type="text" placeholder="Digite o que você procura">
-                    <button><i class="bi bi-search"></i></button>
+                    <input type="text" id="search-input" placeholder="Digite o que você procura">
+                    <button id="search-button"><i class="bi bi-search"></i></button>
                 </div>
+
+                <!-- Caixa de popup -->
+                <div id="custom-alert" class="custom-alert">
+                    <div class="custom-alert-content">
+                        <i class="bi bi-envelope-at"></i>
+                        <span id="close-alert" class="close-btn">&times;</span>
+                        <p id="alert-message"></p>
+                        <p>Cadastre para receber uma notificação quando chegar!</p>
+                        <form class="form-buscar">
+                            <input class="inputs" type="text" placeholder="Digite seu nome" required>
+                            <input class="inputs" type="email" placeholder="Digite seu e-mail" required>
+                            <div class="input-div">
+                                <input class="input-check" type="checkbox" required>
+                                <label>Estou de acordo com a Politica de Privacidade</label>
+                            </div>
+                            <button type="submit">Cadastrar</button>
+                        </form>
+                    </div>
+                </div>
+
 
 
                 <div class="user-cart">

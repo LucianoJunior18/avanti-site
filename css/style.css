@@ -6,6 +6,7 @@
   --color-azul: #005cff;
   --color-azul-secundario: #00264e;
   --color-black: #000;
+  --color-cinza-claro: #dedede;
   --font-color: #303030;
 }
 
@@ -61,6 +62,65 @@ header {
   position: fixed;
   z-index: 999999;
   transition: 0.5s;
+}
+
+.custom-alert {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* fundo escurecido */
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.custom-alert-content {
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+  font-size: 16px;
+}
+
+.custom-alert-content .form-buscar {
+  background-color: var(--color-cinza-claro);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.form-buscar .inputs,
+.form-buscar button {
+  margin: 8px !important;
+}
+
+.custom-alert-content i {
+  color: var(--color-azul);
+  font-size: 100px;
+}
+
+.custom-alert-content p {
+  margin: 10px 0;
+  color: #000000;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 40px;
+  cursor: pointer;
+  color: #000000;
+}
+
+.close-btn:hover {
+  color: var(--color-azul);
 }
 
 .header-container {
@@ -841,7 +901,8 @@ header.rolar {
   align-items: center;
 }
 
-.input-form .inputs {
+.input-form .inputs,
+.form-buscar .inputs {
   width: 280px;
   height: 48px;
   border-radius: 8px;
@@ -857,7 +918,8 @@ header.rolar {
   cursor: pointer;
 }
 
-.input-form button {
+.input-form button,
+.form-buscar button {
   padding: 14px 24px;
   background-color: #005cff;
   color: #fff;
@@ -868,7 +930,8 @@ header.rolar {
   margin: 0 20px;
 }
 
-.input-form button:hover {
+.input-form button:hover,
+.form-buscar button:hover {
   background-color: #0148c4;
 }
 /* FIM CADASTRO FORM */
