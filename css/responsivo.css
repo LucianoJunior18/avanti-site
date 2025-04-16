@@ -614,6 +614,11 @@
     width: 90vw;
   }
 
+  input,
+  textarea {
+    font-size: 16px;
+  }
+
   /* INICIO MAIN  */
   .main-sale {
     height: 550px;
