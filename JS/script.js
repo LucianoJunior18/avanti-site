@@ -165,6 +165,7 @@ inputField.addEventListener("keydown", function (event) {
 // Evento de fechar o popup
 closeBtn.addEventListener("click", function () {
     alertBox.classList.remove("show");
+    document.body.classList.remove("no-scroll");
 });
 
 
