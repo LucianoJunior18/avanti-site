@@ -61,7 +61,7 @@ header {
   background-color: #fff;
   position: fixed;
   z-index: 999999;
-  transition: 0.5s;
+  transition: all 0.3s ease; /* Transição suave para todas as propriedades */
 }
 
 .custom-alert {
@@ -159,7 +159,8 @@ header {
 
 /* estilo menu-dinamico */
 header.rolar {
-  box-shadow: 0 0 8px #00000061;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Sombra mais suave e difusa */
+  will-change: box-shadow; /* Indica que o box-shadow será alterado */
 }
 
 .search-bar {
