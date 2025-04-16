@@ -313,10 +313,6 @@ header.rolar {
   padding: 10px 0;
 }
 
-.drop-hover.active > a {
-  color: #005cff;
-}
-
 /* Sub-dropdown */
 .sub-dropdown,
 .depart-outros {
@@ -327,8 +323,30 @@ header.rolar {
   padding: 8px 15px;
 }
 
-.sub-dropdown .sub-a,
-.sub-dropdown a:hover {
+.depart-outros {
+  max-height: 300px; /* ajuste conforme o necessário */
+  overflow-y: auto;
+  padding-right: 10px; /* evita que o conteúdo fique colado na barra de rolagem */
+}
+
+.depart-outros::-webkit-scrollbar {
+  width: 6px;
+}
+
+.depart-outros::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.depart-outros::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 4px;
+}
+
+.sub-dropdown .sub-a:hover,
+.sub-dropdown a:hover,
+.depart-outros a:hover,
+.sub-dropdown:hover .sub-a,
+.drop-hover.active > a {
   color: #005cff;
 }
 
@@ -337,6 +355,11 @@ header.rolar {
   position: absolute;
   top: 0;
   left: 100%;
+  display: flex;
+  flex-direction: column; /* empilha o título e o conteúdo */
+  padding: 20px 30px;
+  background-color: #ffffff;
+  width: 1000px;
 }
 
 .sub-dropdown-left {
@@ -346,7 +369,7 @@ header.rolar {
 }
 
 .sub-dropdown .sub-dropdown-content {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   gap: 20px;
   flex-direction: column;
@@ -357,17 +380,14 @@ header.rolar {
   background-color: #ffffff;
 }
 
+/* Mostra o submenu só quando passa no link */
+.sub-dropdown:hover .sub-dropdown-content {
+  display: flex;
+}
+
 .drop-2 {
   left: -190px;
   width: 0;
-}
-
-.sub-dropdown-content {
-  display: flex;
-  flex-direction: column; /* empilha o título e o conteúdo */
-  padding: 20px 30px;
-  background-color: #ffffff;
-  width: 1000px;
 }
 
 .sub-dropdown .sub-dropdown-left {
