@@ -312,6 +312,9 @@ header.rolar {
   padding: 10px 0;
 }
 
+.sub-dropdown {
+}
+
 /* Sub-dropdown */
 .sub-dropdown,
 .depart-outros {
@@ -341,8 +344,8 @@ header.rolar {
   border-radius: 4px;
 }
 
-.sub-dropdown .sub-a:hover,
 .sub-dropdown a:hover,
+.nav-links li a:hover,
 .depart-outros a:hover,
 .sub-dropdown:hover .sub-a,
 .drop-hover.active > a {
@@ -355,7 +358,7 @@ header.rolar {
   top: 0;
   left: 100%;
   display: flex;
-  flex-direction: column; /* empilha o título e o conteúdo */
+  flex-direction: column;
   padding: 20px 30px;
   background-color: #ffffff;
   width: 1000px;
@@ -368,7 +371,7 @@ header.rolar {
 }
 
 .sub-dropdown .sub-dropdown-content {
-  display: none;
+  display: flex;
   flex-wrap: wrap;
   gap: 20px;
   flex-direction: column;
@@ -380,9 +383,6 @@ header.rolar {
 }
 
 /* Mostra o submenu só quando passa no link */
-.sub-dropdown:hover .sub-dropdown-content {
-  display: flex;
-}
 
 .drop-2 {
   left: -190px;
