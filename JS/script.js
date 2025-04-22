@@ -144,7 +144,7 @@ const closeBtn = document.getElementById("close-alert");
 function showAlert() {
     const input = inputField.value.trim();
     if (input) {
-        alertMessage.innerHTML = `Você buscou por <strong>${input}</strong>, esse item não está disponível!`;
+        alertMessage.innerHTML = `Você buscou por: <strong>${input}</strong>, esse item não está disponível!`;
         alertBox.classList.add("show");
 
         document.body.classList.add("no-scroll");
